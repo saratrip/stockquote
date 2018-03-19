@@ -5,16 +5,16 @@ revisionHistoryLimit: 1
 image:
   repository: stockquote
   tag: v1.0.0
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   resources:
     requests:
       cpu: 200m
       memory: 300Mi
 service:
-  name: Node
+  name: stock-quote-service
   type: NodePort
   servicePort: 9080
-  servicePortHttps: 9443
+  nodePort: 31002
 hpa:
   enabled: false
   minReplicas: 1
