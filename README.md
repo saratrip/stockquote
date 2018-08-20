@@ -28,7 +28,7 @@ To deploy this application to IBM Cloud using a toolchain click the **Create Too
     that contains the IBM JDK (Windows, Linux)
 
 ### Configuration
-The application is configured to provide various technologies and features. These capabilities are provided through dependencies in the pom.xml file and Liberty features enabled in the server config file found in `src/main/liberty/config/server.xml`.
+The application is configured to provide various technologies and features. These capabilities are provided through dependencies in  the pom.xml file and Liberty features enabled in the server config file found in `src/main/liberty/config/server.xml`.
 
 ### Project contents
 The context root is set in the `src/main/webapp/WEB-INF/ibm-web-ext.xml` file. The ports are set in the pom.xml file. 
